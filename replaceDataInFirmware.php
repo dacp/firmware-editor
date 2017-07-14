@@ -4,7 +4,7 @@ function BinaryRepresentation(string $char):string
 //returns the binary representation of a one byte string
 {
     $binary = decbin(ord($char)); //convert byte to int and get binary representation
-    $binary = str_pad($binary, 8, 0, STR_PAD_LEFT); //remove the extra zeros
+    $binary = str_pad($binary, 8, 0, STR_PAD_LEFT); //pad with 0s up to 8 digits
     return $binary;
 }
 
